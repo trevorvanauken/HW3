@@ -35,7 +35,7 @@
 
     <h2>Pseudo-Mercator</h2>
     <h3>The pseudo-mercator is a cylindrical projection. Since the mercator is a conformal map projection, directions and shapes
-        are maintained. However, area, especially around the poles, is very distorted.
+        are maintained. However, area, especially around the poles, is very distorted. Both latitude and longitude lines are straight.
     </h3>
     <a href=".//maps/3857.png">
     <img src=".//maps/3857.png" alt="Pseudo-Mercator" width='500px'>
@@ -43,7 +43,7 @@
 
     <h2>Sphere Winkel</h2>
     <h3>This map is spherical, with bulging at the equator. It does not appear to be conformal or equal-area, so it somewhat distorts
-        all factors. 
+        all factors. This map has flat horizontal lines and increasingly curvy longitude lines as you reach the sides.
     </h3>
     <a href=".//maps/53018.png">
     <img src=".//maps/53018.png" alt="Sphere Winkel" width='500px'>
@@ -51,7 +51,7 @@
 
     <h2>Cylindrical Equal Area</h2>
     <h3>This map is cylindrical, which means a cylinder is put around the globe then projected. As it says in the name, this map maintains
-        the area of all locations. This comes at the expense of shape, direction, and distance, especially at the poles.
+        the area of all locations. This comes at the expense of shape and distance, especially at the poles.
     </h3>
     <a href=".//maps/54034.png">
     <img src=".//maps/54034.png" alt="Cylindrical Equal Area" width='500px'>
@@ -60,26 +60,34 @@
     <h2>World Equidistant Conic</h2>
     <h3>This is a conic map, which is created by laying a cone over the globe then projecting. This particular map is centered over the north pole.
         This map maintains distance at the expense of shape, direction, and area. This map is good at showing how close countries are to each other, especially
-        at the point where the map is centered, in this case the north pole.
+        at the point where the map is centered, in this case the north pole. It is important how much of the cone is done, since it can be much narrower than this map. 
+        Still, this one shows the USA and Russia much more separated than an azimuthal map like the next.
     </h3>
     <a href=".//maps/54027.png">
     <img src=".//maps/54027.png" alt="World Equidistant Conic" width='500px'>
     </a>
 
     <h2>North Azimuthal Equidistant</h2>
-    <h3>Some observations</h3>
+    <h3>While also centered around the north pole and maintaining distance, this map is different than the one above because it is an azimuthal, which means
+        surface area is projected onto a plane. This azimuthal maintains the far-side distance better than the conic projection.
+    </h3>
     <a href=".//maps/102016.png">
     <img src=".//maps/102016.png" alt="North Azimuthal Equidistant" width='500px'>
     </a>
 
     <h2>World Eckert 2</h2>
-    <h3>Some observations</h3>
+    <h3>This map has an odd shape, with extra stretching around the far sides near the equator. It is equidistant, so it distorts shapes, directions, and distances.
+        It appears to have little distortion around the center with lots around the sides and a moderate amount near the poles.
+
+    </h3>
     <a href=".//maps/54014.png">
     <img src=".//maps/54014.png" alt="World Eckert 2" width='500px'>
     </a>
 
     <h2>World Robinson</h2>
-    <h3>Some observations</h3>
+    <h3>This map shows flat horizontal lines and increasingly curvy longitude lines as you reach the sides. It appears to be similar to a cylindriacl projection,
+        with some changes. This map does not maintain any of the factors, but it looks very nice and easy to read.
+    </h3>
     <a href=".//maps/54030.png">
     <img src=".//maps/54030.png" alt="World Robinson" width='500px'>
     </a>
